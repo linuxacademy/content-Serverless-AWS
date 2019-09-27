@@ -2,8 +2,8 @@ import boto3
 
 rds_client = boto3.client('rds-data')
 database_name = 'information_schema'
-db_cluster_arn = 'arn:aws:rds:us-east-1:987963314345:cluster:moosakhalid'
-db_credentials_secret = 'arn:aws:secretsmanager:us-east-1:987963314345:secret:rds-db-credentials/cluster-H3CA5N243BR2URRMFJUOPKYYP4/admin-zF6lff'
+db_cluster_arn = '<AURORA-SERVERLESS-DB-ARN>'
+db_credentials_secret = '<SECRETS-MANAGER-SECRET-ARN>'
 
 def lambda_handler(event,context):
     def execute_statement(sql):
