@@ -3,7 +3,7 @@
 	"Statement": [
 		{
 			"Effect": "Allow",
-			"Allow": [
+			"Action": [
 				"sts:AssumeRole"
 			],
 			"Principal": {
